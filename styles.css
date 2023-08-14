@@ -1,0 +1,134 @@
+body{
+    background: white;
+    text-align: center;
+}
+
+/* Position the title */
+.title {
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem; /* Set the font size to 2.5 rem */
+    color: #8457B1; /* Set the color to the specified value */
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 0.25em;
+}
+
+/* Position the subtitle below the title */
+.subtitle {
+    position: absolute;
+    top: calc(88px + 2.5rem + 8px); /* Calculate the position */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #797876;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+
+.cloud {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    animation: wind 4.5s linear infinite;
+    z-index: 3; 
+}
+
+.cloud2 {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    animation: wind2 4.5s linear infinite;
+    z-index: 2; 
+}
+
+.redthing {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    animation: redwind 3s linear infinite;
+    z-index: 4; 
+}
+
+.purplething {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    animation: purplewind 3s linear infinite;
+    z-index: 5; 
+}
+
+.wiggly-dark-purple {
+    position: absolute;
+    bottom: 0;
+    left: 0px; 
+    z-index: 6; 
+}
+
+@keyframes wind{
+    0%, 100% {
+        transform: translateX(0); /* Start and end position */
+    }
+    50% {
+        transform: translateX(25px); /* Move slightly to the right */
+    }
+        
+}
+
+@keyframes wind2 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes purplewind {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes redwind {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(25px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Centered SVG container */
+.centered-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the centered SVG is behind clouds */
+}
+
+.static-svg {
+    width: 900px; /* Adjust size as needed */
+    height: 900px;
+}
