@@ -1022,6 +1022,118 @@
 </div>
 </div>
 
+<div class="gratitude-card">
+
+    <title>Gratitude Card</title>
+    <style>
+        /* Card container */
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 7;
+            position: relative; /* Ensure the card can be positioned */
+            z-index: 7; /* Set a higher z-index to display on top of clouds */
+            top: 700px; /* Position the card 500px from the top */
+        }
+
+          /* Text field */
+          .text-field {
+            width: 95%;
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+
+         /* Send button */
+         .send-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #FEBB5F; 
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        
+
+        
+        /* Entries container */
+        .entries {
+            margin-top: 20px;
+        }
+
+        /* Individual entry */
+        .entry {
+            background-color: #9F447C; /* Entry background color */
+            padding: 20px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+
+        /* Center the message */
+        .message {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+<body>
+    <div class="card">
+        <h2 class="message">I am grateful for</h2>
+        <div class="send-button-container">
+            <div class="text-field-container">
+                <input type="text" class="text-field" id="gratitudeEntry" placeholder="Type here..." onkeydown="handleKeyDown(event)">
+            </div>
+            <button class="send-button" onclick="addEntry()">Send</button>  <!-- changed back to just say send -->
+        </div>
+        <div class="entries" id="entriesContainer">
+            <!-- Gratitude entries will be added here -->
+        </div>
+    </div>
+
+    <script>
+        function addEntry() {
+            const entryText = document.getElementById('gratitudeEntry').value;
+            if (entryText.trim() !== '') {
+                const entriesContainer = document.getElementById('entriesContainer');
+                const entryDiv = document.createElement('div');
+                entryDiv.classList.add('entry');
+                entryDiv.textContent = entryText;
+                // Prepend the new entry to the beginning of the container
+            entriesContainer.insertBefore(entryDiv, entriesContainer.firstChild);
+                document.getElementById('gratitudeEntry').value = '';
+            }
+        }
+
+        function handleKeyDown(event) {
+            if (event.key === 'Enter') {
+                addEntry();
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>
+
 
 
 

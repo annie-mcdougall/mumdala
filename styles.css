@@ -69,6 +69,10 @@ body{
     z-index: 6; 
 }
 
+.card {
+    z-index: 7;
+}
+
 @keyframes wind{
     0%, 100% {
         transform: translateX(0); /* Start and end position */
