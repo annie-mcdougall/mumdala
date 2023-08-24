@@ -1,5 +1,5 @@
 body{
-    background: white;
+    background: #F9FBFD;
     text-align: center;
 }
 
@@ -69,9 +69,116 @@ body{
     z-index: 6; 
 }
 
-.card {
-    z-index: 7;
+
+/* Style for the container */
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7; /* Place the container above other elements */
 }
+
+/* Style for the image */
+#gratitudeImage {
+        max-width: 100%;
+        max-height: 100%;
+}
+
+        /* Card container */
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 16px;
+            background-color: rgba(92, 21, 87, 0.5);
+            color: #fff;
+            z-index: 8;
+            position: relative; /* Ensure the card can be positioned */
+            z-index: 7; /* Set a higher z-index to display on top of clouds */
+            top: 700px; /* Position the card 500px from the top */
+            font-weight: 300;
+            letter-spacing: 1.6px;
+            font-weight: 400;
+        }
+
+          /* Text field */
+          .text-field {
+            width: 95%;
+            padding: 10px 0px 10px 20px; /* Add 20px of padding to the left */
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1.6px;
+        
+        }
+
+
+         /* Send button */
+         .send-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #FEBB5F; 
+            color: #36383e;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        
+
+        
+        /* Entries container */
+        .entries {
+            margin-top: 20px;
+        }
+
+        /* Individual entry */
+        .entry {
+            background-color: #9F447C; /* Entry background color */
+            padding: 20px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+
+        /* Center the message */
+        .message {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Counter container */
+        .counter {
+            position: absolute;
+            top: 100px; /* top position*/
+            right: 60px; /* right position*/
+            font-size: 16px;
+            color: #FFAF43;
+            text-align: center;
+            font-family: open sans;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 133.333% */
+        }
 
 @keyframes wind{
     0%, 100% {
