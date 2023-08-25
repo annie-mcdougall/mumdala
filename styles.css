@@ -150,7 +150,7 @@ body{
         /* Individual entry */
         .entry {
             background-color: #9F447C; /* Entry background color */
-            padding: 16px;
+            padding: 8px;
             border-radius: 30px;
             margin-bottom: 10px;
             color: #fff;
