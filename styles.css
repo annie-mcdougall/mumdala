@@ -35,15 +35,16 @@ body{
     bottom: 0;
     right: 0px;
     animation: wind 4.5s linear infinite;
-    z-index: 3; 
+    z-index: 4; 
 }
 
 .cloud2 {
     position: absolute;
+    margin-top: 60px;
     bottom: 0;
     left: 0px;
     animation: wind2 4.5s linear infinite;
-    z-index: 2; 
+    z-index: 3; 
 }
 
 .redthing {
@@ -51,7 +52,7 @@ body{
     bottom: 0;
     right: 0px;
     animation: redwind 3s linear infinite;
-    z-index: 4; 
+    z-index: 5; 
 }
 
 .purplething {
@@ -59,14 +60,14 @@ body{
     bottom: 0;
     left: 0px;
     animation: purplewind 3s linear infinite;
-    z-index: 5; 
+    z-index: 6; 
 }
 
 .wiggly-dark-purple {
     position: absolute;
     bottom: 0;
     left: 0px; 
-    z-index: 6; 
+    z-index: 7; 
 }
 
 
@@ -80,14 +81,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 7; /* Place the container above other elements */
+    z-index: 2; /* Place the container above other elements */
 }
 
 /* Style for the image */
 #gratitudeImage {
         max-width: 100%;
         max-height: 100%;
+
+ 
+
+    /* Apply the rotation animation */
+    animation: rotateImage 120s linear infinite; /* Adjust duration as needed */
 }
+
+
 
         /* Card container */
         .card {
@@ -226,6 +234,17 @@ body{
         transform: translateX(0);
     }
 }
+
+/* Define a custom rotation animation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate 360 degrees for one full rotation */
+    }
+}
+
 
 /* Centered SVG container */
 .centered-svg {
