@@ -2,6 +2,13 @@ const imagePaths = [
     "path_to_svg1.svg",
     "path_to_svg2.svg",
     "path_to_svg3.svg",
+    "path_to_svg4.svg",
+    "path_to_svg5.svg",
+    "path_to_svg6.svg",
+    "path_to_svg7.svg",
+    "path_to_svg8.svg",
+    "path_to_svg9.svg",
+    "path_to_svg10.svg",
     // Add more SVG image paths as needed
 ];
 
