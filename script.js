@@ -23,10 +23,12 @@ let inputCount = 0;
 
          // Get the index of the corresponding SVG image in the array
          const imageIndex = (inputCount - 1) % imagePaths.length;
+         const gratitudeImage = document.createElement('img');
 
 // Set the src attribute of the <img> element to the selected SVG image
 gratitudeImage.src= imagePaths[imageIndex];
-gratitudeImage.style.display = 'block'; // Show the image
+gratitudeImage.style.display = 'block'; 
+document.getElementById('image-container').appendChild(gratitudeImage);// Show the image
                 const entriesContainer = document.getElementById('entriesContainer');
                 const entryDiv = document.createElement('div');
                 entryDiv.classList.add('entry');

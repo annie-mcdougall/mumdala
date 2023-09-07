@@ -1,6 +1,8 @@
 body{
     background: #F9FBFD;
     text-align: center;
+    overflow-x: hidden;
+
     
 }
 
@@ -325,13 +327,13 @@ body{
 @media (max-width: 768px) {
     /* Styles for smaller screens */
     .cloud {
-        width: 300px; /* Adjust the width as needed for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 300px; 
+        height: auto; 
     }
     .cloud2 {
         width: 100%; /* Adjust the width as needed for smaller screens */
         height: auto; /* Maintain aspect ratio */
-    }
+    } 
 
     .cloud2-small {
         width: 300px; /* Adjust the width as needed for smaller screens */
@@ -339,7 +341,7 @@ body{
     }
 
     .cloud-small {
-        width: 300px; /* Adjust the width as needed for smaller screens */
+        width: 200px; /* Adjust the width as needed for smaller screens */
         height: auto; /* Maintain aspect ratio */
 
 
@@ -360,6 +362,14 @@ body{
 
     .card {
         top: 600px;
+    }
+
+    .title {
+        top: 40px;
+    }
+
+    .subtitle {
+        top: calc(40px + 2.5rem + 8px); /* Calculate the position */
     }
 
     
