@@ -182,16 +182,18 @@
 <body>
     <div class="card">
         <h2 class="message">I am grateful for</h2>
-        <div class="send-button-container">
-            <div class="text-field-container">
+                 <div class="text-field-container">
                 <input type="text" class="text-field" id="gratitudeEntry" placeholder="Type something..." onkeydown="handleKeyDown(event)">
-            </div>
+                </div>
+                <div class="send-button-container">
             <button class="send-button" onclick="addEntry()">Send</button>  <!-- changed back to just say send -->
         </div>
+        
         <div class="entries" id="entriesContainer">
             <!-- Gratitude entries will be added here -->
         </div>
     </div>
+</div>
 
 
     <!-- Counter container -->

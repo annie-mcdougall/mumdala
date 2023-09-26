@@ -29,7 +29,7 @@ function addEntry() {
         // Set the src attribute of the <img> element to the selected SVG image
         gratitudeImage.src = imagePaths[imageIndex];
         gratitudeImage.style.display = 'block';
-        document.getElementById('image-container').innerHTML = ''; 
+        document.getElementById('image-container').innerHTML = ''; // Clear existing images
         document.getElementById('image-container').appendChild(gratitudeImage); // Show the image
 
         const entriesContainer = document.getElementById('entriesContainer');

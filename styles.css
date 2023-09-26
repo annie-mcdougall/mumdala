@@ -395,6 +395,44 @@ body{
     
     }
 
+    .card {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      /*box-sizing: border-box; /* Include padding in width */
+      /*display: flex; */
+      flex-direction: column;
+      z-index: 999;
+    
+    }
+
+    .text-field-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        background-color: transparent; /* Make the background transparent */
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+      .text-field {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-right: 10px; /* Add spacing between input and button */
+    }
+
+    .entries {
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
 }
 
 /* Media query to hide the smaller cloud on screens wider than 768px */
