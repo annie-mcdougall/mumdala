@@ -326,6 +326,11 @@ body{
 /* Media query for screens narrower than 768px (adjust as needed) */
 @media (max-width: 768px) {
     /* Styles for smaller screens */
+
+    body {
+        overflow-x: hidden;
+    }
+    
     .cloud {
         width: 300px; 
         height: auto; 
@@ -396,7 +401,7 @@ body{
     }
 
     .card {
-      position: relative;
+      position: sticky;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -412,12 +417,11 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
         bottom: 0;
         background-color: transparent; /* Make the background transparent */
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
     }
 
       .text-field {
@@ -425,6 +429,7 @@ body{
         display: flex;
         align-items: center;
         margin-right: 10px; /* Add spacing between input and button */
+        padding: 16px 0px 16px 16px; /* Add 20px of padding to the left */
     }
 
     .entries {
