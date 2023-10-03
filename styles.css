@@ -132,6 +132,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 2; /* Place the container above other elements */
+    animation: rotateImage 120s linear infinite; /
 }
 
 /* Style for the image */
@@ -332,10 +333,12 @@ body{
     }
     
     .cloud {
+        top: 55%;
         width: 300px; 
         height: auto; 
     }
     .cloud2 {
+        top: 50%;
         width: 100%; /* Adjust the width as needed for smaller screens */
         height: auto; /* Maintain aspect ratio */
     } 
@@ -374,7 +377,7 @@ body{
     }
 
     .card {
-        top: 600px;
+        top: 60%;
     }
 
     .title {
@@ -387,12 +390,17 @@ body{
     }
 
     .image-container {
-        width: 100%;
+        width: 50%;
         height: 40%;
         margin: 0 auto;
         top: 180px;
 
     }
+
+.gratitudeImage {
+    width: 50%;
+    height: auto; 
+}
 
     .counter {
         right: 32px; /* right position*/
@@ -401,19 +409,19 @@ body{
     }
 
     .card {
-      /* position: -webkit-sticky; /* Safari */
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      /* align-self: flex-end; */
-      width: 100%;
-      /*height: 50%;*/
-      box-sizing: border-box; /* Include padding in width */
-    /*display: flex; */
-     /* flex-direction: column;*/
-      z-index: 8;
-    
-    }
+        /* position: -webkit-sticky; /* Safari */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        /* align-self: flex-end; */
+        width: 100%;
+        /*height: 50%;*/
+        box-sizing: border-box; /* Include padding in width */
+      /*display: flex; */
+       /* flex-direction: column;*/
+        z-index: 8;
+      
+      }
 
     .text-field-container {
         display: flex;
