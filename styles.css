@@ -378,9 +378,12 @@ body{
     }
 
     .static-svg-small {
-        top: 20%;
+        position: fixed;
+        top: 200;
+        left: 0;
+        right: 0;
         width: 100%; /* Adjust the width as needed for smaller screens */
-        height: 50%; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .card {
