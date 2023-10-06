@@ -370,11 +370,20 @@ body{
     }
 
     .purplething-small {
+        display: none;
         width: 100%; /* Adjust the width as needed for smaller screens */
         height: auto; /* Maintain aspect ratio */
     }
 
     .purplething {
+        display: none;
+    }
+
+    .redthing {
+        display: none;
+    }
+
+    .wiggly-dark-purple {
         display: none;
     }
 
@@ -434,7 +443,7 @@ body{
 
     .counter {
         right: 32px; /* right position*/
-        top: 138px; /* top position*/
+        top: 106px; /* top position*/
     
     }
 
