@@ -429,6 +429,7 @@ body{
         height: 50%;
         margin: 0 auto;
         top: 180px;
+        position: absolute;
 
     }
 
