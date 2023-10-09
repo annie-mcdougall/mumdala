@@ -339,7 +339,7 @@ body{
     /* Styles for smaller screens */
 
     body {
-        overflow-x: hidden;
+        overflow-x: clip;
     }
     
     .cloud {
@@ -433,7 +433,7 @@ body{
     }
 
     .image-container img {
-        width: 100%;
+        width: 208%;
     }
 
 .gratitudeImage {
