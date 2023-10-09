@@ -264,6 +264,10 @@ body{
 
 }
 
+/*.image-container img {
+    width: 50%;
+}*/
+
 
 @keyframes wind{
     0%, 100% {
@@ -425,16 +429,17 @@ body{
     }
 
     .image-container {
-        width: 50%;
-        height: 50%;
+        height: 50%; 
         margin: 0 auto;
         top: 180px;
-        position: absolute;
+        position: center;
 
     }
 
     .image-container img {
-        width: 208%;
+        width: 110%;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
 .gratitudeImage {
