@@ -17,6 +17,7 @@ body{
     text-align: center;
     font-family: 'Bricolage Grotesque', sans-serif;
     letter-spacing: 0.25em;
+    z-index: 9;
 }
 
 /* Position the subtitle below the title */
@@ -30,6 +31,7 @@ body{
     color: #797876;
     text-align: center;
     letter-spacing: 0.1em;
+    z-index: 10;
 }
   
 /* CSS for responsive SVG */
@@ -163,7 +165,7 @@ body{
             position: relative; /* Ensure the card can be positioned */
             z-index: 7; /* Set a higher z-index to display on top of clouds */
             top: 700px; /* Position the card 500px from the top */
-            font-weight: bold;
+            /*font-weight: bold;*/
             letter-spacing: 1.6px;
         }
 
@@ -202,7 +204,7 @@ body{
             border: none;
             border-radius: 30px;
             font-size: 16px;
-            font-weight: bold;
+            /*font-weight: bold;*/
             text-align: center;
             cursor: pointer;
             font-family: 'Open Sans', sans-serif;
@@ -240,13 +242,14 @@ body{
             top: 100px; /* top position*/
             right: 60px; /* right position*/
             font-size: 16px;
-            color: #FFAF43;
+            color: #9F447C; 
             text-align: center;
             font-family: open sans;
             font-size: 30px;
             font-style: normal;
             font-weight: 400;
             line-height: 40px; /* 133.333% */
+            z-index: 11;
         }
 
         /* CSS for the colored section */
