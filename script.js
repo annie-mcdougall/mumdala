@@ -37,15 +37,22 @@ function addEntry() {
         const entryDiv = document.createElement('div');
         entryDiv.classList.add('entry');
         entryDiv.textContent = entryText;
+
         // Prepend the new entry to the beginning of the container
         entriesContainer.insertBefore(entryDiv, entriesContainer.firstChild);
-        document.getElementById('gratitudeEntry').value = '';
+        /*document.getElementById('gratitudeEntry').value = '';*/
 
         // Update the entry count and display it
         entryCount++;
         document.getElementById('entryCounter').textContent = entryCount;
 
-        
+        if (entryCount === 0) {
+            // Show the empty state image
+            document.getElementById('gratitudeImage').style.display = 'show';
+        } else {
+            // Hide the empty state image
+            document.getElementById('gratitudeImage').style.display = 'none';
+        }  
     }
 
        // Get the <img> element by its id
