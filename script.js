@@ -26,6 +26,8 @@ function addEntry() {
         const imageIndex = (inputCount - 1) % imagePaths.length;
         const gratitudeImage = document.createElement('img');
 
+        document.getElementById('gratitudeEntry').value = '';
+
         // Set the src attribute of the <img> element to the selected SVG image
         gratitudeImage.src = imagePaths[imageIndex];
         gratitudeImage.style.display = 'block';
@@ -53,6 +55,8 @@ function addEntry() {
             // Hide the empty state image
             document.getElementById('gratitudeImage').style.display = 'none';
         }  
+
+        
     }
 
        // Get the <img> element by its id
