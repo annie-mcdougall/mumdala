@@ -48,13 +48,17 @@ function addEntry() {
         entryCount++;
         document.getElementById('entryCounter').textContent = entryCount;
 
-        if (entryCount === 0) {
-            // Show the empty state image
-            document.getElementById('gratitudeImage').style.display = 'show';
+         // Play different sounds based on the entry count
+         if (entryCount % 5 === 0) {
+            // This is a multiple of 5, play the 5th entry sound
+            const audioElement = document.getElementById('fifthEntrySound');
+            audioElement.play();
         } else {
-            // Hide the empty state image
-            document.getElementById('gratitudeImage').style.display = 'none';
-        }  
+            // This is not a multiple of 5, play the regular entry sound
+            const audioElement = document.getElementById('regularEntrySound');
+            audioElement.play();
+        }
+
 
         
     }
