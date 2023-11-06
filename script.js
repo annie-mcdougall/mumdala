@@ -15,12 +15,21 @@ const imagePaths = [
 let inputCount = 0;
 
 let entryCount = 0;
+const shootEvery = 5; // Number of entries to trigger the shooting effect
+const shootingCircle = '<div class="shooting-circle"></div>'; // New: Define the shooting circle
+
 
 function addEntry() {
     const entryText = document.getElementById('gratitudeEntry').value;
     if (entryText.trim() !== '') {
         // Increment the input count
         inputCount++;
+
+         // Check if this is a shoot trigger // New: Check if it's time to create shooting circles
+         if (inputCount % shootEvery === 0) { // New
+            // Add shooting circles // New: Create and display shooting circles
+            document.body.innerHTML += shootingCircle; // New
+        }
 
         // Get the index of the corresponding SVG image in the array
         const imageIndex = (inputCount - 1) % imagePaths.length;
