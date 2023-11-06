@@ -18,8 +18,11 @@ body{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Bricolage Grotesque', sans-serif;
+    position: absolute;
     top: 0;
-    font-kerning: 1.5;
+    left: 0;
+    width: 100%;
+    letter-spacing: 1.6px;
 }
 
 .desktop-banner a {
