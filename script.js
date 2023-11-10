@@ -25,11 +25,8 @@ function addEntry() {
         // Increment the input count
         inputCount++;
 
-         // Check if this is a shoot trigger // New: Check if it's time to create shooting circles
-         if (inputCount % shootEvery === 0) { // New
-            // Add shooting circles // New: Create and display shooting circles
-            document.body.innerHTML += shootingCircle; // New
-        }
+        
+
 
         // Get the index of the corresponding SVG image in the array
         const imageIndex = (inputCount - 1) % imagePaths.length;
